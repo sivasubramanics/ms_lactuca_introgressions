@@ -1,0 +1,62 @@
+% flag to enable review mode
+\newif\ifreview
+\ifdefined\reviewflag
+  \reviewtrue
+\else
+  \reviewfalse
+\fi
+
+% \documentclass[webpdf,contemporary,large,namedate]{template/oup-authoring-template}
+% \documentclass[numsec,webpdf,modern,large]{template/oup-authoring-template}
+\documentclass[nocrop]{template/bioinfo}
+\copyrightyear{2025}
+\pubyear{2025}
+
+\input{preamble}
+
+\externaldocument[suppl-]{suppl}
+
+\begin{document}
+\firstpage{1}
+\subtitle
+
+\title{KCFtools: Rapid alignment-free method for introgression screening and GWAS using \kmer profiles}
+\author{
+  Sivasubramani Selvanayagam$^{1,*}$,
+  Jesus Quiroz-Chavez$^{3}$,
+  Ricardo Ramirez-Gonzalez$^{3}$,
+  Christobal Uauy$^{3}$,
+  Sandra Smit$^{2}$, and
+  M Eric Schranz$^{1,*}$
+}
+
+\address{
+  $^1$Biosystematics Group, Wageningen University \& Research, The Netherlands \\
+  $^2$Bioinformatics Group, Wageningen University \& Research, The Netherlands \\
+  $^3$John Innes Centre, Norwich Research Park, Norwich, UK
+}
+
+\corresp{$^*$Correspondence: c.s.sivsubramani@gmail.com, eric.schranz@wur.nl}
+
+\history{}
+
+\editor{}
+
+\input{sections/abstract}
+\maketitle
+
+\input{sections/introduction}
+
+\input{sections/methods}
+
+\input{sections/results}
+
+\input{sections/discussion}
+
+\input{sections/data_availability}
+
+\input{sections/contributions}
+
+\bibliography{bibliography/kcftools.mod}
+
+\end{document}
